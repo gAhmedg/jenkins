@@ -5,6 +5,8 @@ pipeline {
       stage('Verify Branch') {
          steps {
             echo "$GIT_BRANCH"
+            sh(script: echo"docker images -a")
+
          }
       }
       stage('Docker Build') {
