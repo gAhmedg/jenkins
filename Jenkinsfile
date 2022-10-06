@@ -19,10 +19,5 @@ pipeline {
             """)
          }
       }
-<<<<<<< HEAD
-=======
-      
-      }
->>>>>>> afa8eef98dae9f201e871bcbd8e8153db8dfcea7
    }
 }
