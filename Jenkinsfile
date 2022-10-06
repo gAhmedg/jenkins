@@ -5,9 +5,9 @@ pipeline {
       stage('Verify Branch') {
          steps {
             echo "$GIT_BRANCH"
-            sh(script: 'echo docker images -a')
+            
 
-         }
+            }
       }
       stage('Docker Build') {
          steps {
@@ -19,7 +19,7 @@ pipeline {
                docker build -t jenkins-pipeline .
                docker images -a
                cd ..
-            """)
+                  """)
          }
       }
 
